@@ -13,7 +13,7 @@ const screenshot = (url) => {
   const width = 1920;
   const height = 1080;
   const output = "json";
-  var query = "https://shot.screenshotapi.net/screenshot";
+  const query = "https://shot.screenshotapi.net/screenshot";
   query += `?token=${TOKEN}&url=${url}&width=${width}&height=${height}&output=${output}`;
 
   return request.get(
